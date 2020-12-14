@@ -1,0 +1,1 @@
+SELECT title, rating from movies JOIN ratings ON movies.id = ratings.movie_id WHERE year = 2010 order by rating DESC, title limit 10;

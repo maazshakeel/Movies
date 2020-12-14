@@ -1,0 +1,1 @@
+SELECT AVG(title) from movies where year = 2012;

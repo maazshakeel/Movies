@@ -1,0 +1,1 @@
+select title from movies where id in (SELECT movie_id from stars where person_id = (SELECT id from people where  name = "Kevin Bacon"));

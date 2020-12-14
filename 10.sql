@@ -1,0 +1,1 @@
+select COUNT(name) from people where id in (select person_id from directors WHERE movie_id in (select id from movies WHERE id in (select movie_id from ratings where rating = 9.0 or rating > 9.0))) order by birth;

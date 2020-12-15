@@ -1,1 +1,1 @@
-select title from movies where id in (SELECT movie_id from stars where person_id = (SELECT id from people where  name = "Kevin Bacon"));
+select COUNT(name) from people where id in (select person_id from stars WHERE  movie_id in (select id from movies where id in (select id from movies where id in (SELECT movie_id from stars where person_id in (SELECT id from people where  name = "Kevin Bacon" and birth = 1958))))) and name != "Kevin Bacon";

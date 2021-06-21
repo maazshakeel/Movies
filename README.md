@@ -26,15 +26,3 @@ Movie ratings, meanwhile, are stored in the `ratings` table. The first column in
 Finally, the `stars` and `directors` tables match people to the movies in which they acted or directed. (Only principal stars and directors are included.) Each table has just two columns: `movie_id` and `person_id`, which reference a specific movie and person, respectively.
 
 The challenge ahead of you is to write SQL queries to answer a variety of different questions by selecting data from one or more of these tables.
-## Specification
-For each of the following problems, you should write a single SQL query that outputs the results specified by each problem. Your response must take the form of a single SQL query, though you may nest other queries inside of your query. You **should not** assume anything about the `id`s of any particular movies or people: your queries should be accurate even if the `id` of any particular movie or person were different. Finally, each query should return only the data necessary to answer the question: if the problem only asks you to output the names of movies, for example, then your query should not also output each movie’s release year.
-
-You’re welcome to check your queries’ results against [IMDb](https://www.imdb.com/) itself, but realize that ratings on the website might differ from those in movies.db, as more votes might have been cast since we downloaded the data!
-
-<ol>
-  <li>In `1.sql`, write a SQL query to list the titles of all movies released in 2008.</li>
-  * Your query should output a table with a single column for the title of each movie.
-  <li>In `2.sql`, write a SQL query to determine the birth year of Emma Stone.</li>
-  * Your query should output a table with a single column and a single row (not including the header) containing Emma Stone’s birth year.
-  * You may assume that there is only one person in the database with the name Emma Stone.
-</ol>
